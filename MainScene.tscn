@@ -61,7 +61,7 @@ position = Vector2( 992, 352 )
 position = Vector2( 672, 416 )
 
 [node name="Tile24" parent="." instance=ExtResource( 2 )]
-position = Vector2( 608, 416 )
+position = Vector2( 608, 480 )
 
 [node name="Tile23" parent="." instance=ExtResource( 2 )]
 position = Vector2( 544, 480 )
@@ -110,6 +110,8 @@ position = Vector2( 992, 608 )
 
 [node name="Enemy" parent="." instance=ExtResource( 3 )]
 position = Vector2( 96, 544 )
+speed = 400
+moveDist = 192
 
 [node name="Tile34" parent="." instance=ExtResource( 2 )]
 position = Vector2( 32, 544 )

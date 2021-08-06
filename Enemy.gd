@@ -19,7 +19,14 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	
+	position.x = move_to(position.x, targetX, speed * delta)
+	
+	if position.x == targetX:
+		if targetX == startX:
+			targetX = position.x + moveDist
+		else:
+			targetX = startX
 
 
 func move_to (current, to, step):
