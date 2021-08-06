@@ -18,5 +18,22 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	pass
+
+
+func move_to (current, to, step):
+	
+	var new = current
+	
+	if new < to:
+		new += step
+		if new > to:
+			new = to
+	else:
+		new -= step
+		
+		if new < to:
+			new = to
+	
+	return new
