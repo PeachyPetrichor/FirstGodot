@@ -40,6 +40,10 @@ func _physics_process(delta):
 	elif vel.x > 0:
 		sprite.flip_h = false
 
+
+func die():
+	
+	get_tree().reload_current_scene()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
